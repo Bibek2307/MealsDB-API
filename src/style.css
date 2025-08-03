@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+img{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.card{
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+    background-color: antiquewhite;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
