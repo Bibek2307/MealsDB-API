@@ -1,12 +1,35 @@
-# React + Vite
+# 🍽️ React MealsDB App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that fetches and displays meals from [TheMealDB API]([https://www.themealdb.com](https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood)/) using `axios` and React hooks (`useState`, `useEffect`). This project focuses on practicing API integration in a React frontend.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch meals data from TheMealDB API
+- Display a list of meals with images and names
+- Search or filter meals (optional if implemented)
+- Uses `axios` for HTTP requests
+- Built with functional components and React hooks
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Functional Components)
+- React Hooks: `useState`, `useEffect`
+- Axios (for API requests)
+- HTML, CSS
+
+
+## ⚙️ How It Works
+
+- On component mount (`useEffect`), the app sends a GET request using `axios` to fetch meals from TheMealDB.
+- The response data is stored in a state variable using `useState`.
+- The meals are then dynamically rendered on the page.
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-mealsdb-app.git
+   cd react-mealsdb-app
+2. npm install
+3. npm run dev
+
